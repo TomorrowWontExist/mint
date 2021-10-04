@@ -186,10 +186,10 @@ function App() {
     blockchain.smartContract.methods
       .mint(_amount)
       .send({
-        gasLimit: "285000",
-        to: "0x688db0131c807a3495c23bc1b25726a76ea31f49",
+        // gasLimit: "950000",
+        to: "0xef52029cca4118ebb68c6cc4610e6cb287618c2f",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((.02 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((.1 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -221,7 +221,7 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 42, fontWeight: "bold" }}
         >
-          <StyledImg1 alt={""} src={i90}/>
+          {/* <StyledImg1 alt={""} src={i90}/> */}
           
         </s.TextTitle>
         <ResponsiveWrapper flex={10} style={{ padding: 0 }}>
@@ -312,7 +312,7 @@ function App() {
         <s.TextDescription style={{ textAlign: "center", fontSize: 20 }}>
                    <s.TextDescription style={{ textAlign: "center", fontSize: 16 }}>
                    {" "}
-                  <Gallery>
+                  {/* <Gallery>
           <div className='photobanner'>
             <img src={i10} alt='' />
             <img src={i26} alt='' />
@@ -347,7 +347,7 @@ function App() {
             <img src={i26} alt='' />
             <img src={i10} alt='' />
           </div>
-        </Gallery>
+        </Gallery> */}
                 </s.TextDescription>
           {/* <button 
   onClick={() =>  navigator.clipboard.writeText('https://etherscan.io/token/0x688db0131c807a3495c23bc1b25726a76ea31f49')}
@@ -356,7 +356,7 @@ Click to Copy Etherscan Address | Buy Straight from Contract
 </button> */}
           </s.TextDescription>
           <s.SpacerSmall />
-          <div>
+          {/* <div>
             <a href="https://opensea.io/collection/the-bee-collaborative">
 <StyledImg4 src={i9} style={{ width: 260, height: 200, padding: 0 }}/>
 </a>
@@ -368,7 +368,7 @@ Click to Copy Etherscan Address | Buy Straight from Contract
 <a href="https://opensea.io/collection/tweethebee">
 <StyledImg4 src={i8} style={{ width: 260, height: 200 }}/>
 </a>
-</div>
+</div> */}
           {/* <s.TextDescription style={{ textAlign: "center" }}>
                   {" "}
                   <a
@@ -389,9 +389,9 @@ Click to Copy Etherscan Address | Buy Straight from Contract
                 </s.TextDescription> */}
         <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
         <s.SpacerLarge />
-          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4'/>
+          {/* <ReactPlayer url='https://youtu.be/IiH9dNAmgB4'/>
           <s.SpacerSmall />
-          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/>
+          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/> */}
         </s.Container>
       </s.Container>
   </s.Screen>
